@@ -55,19 +55,14 @@ We're building an **intelligent platform** that transforms how run clubs operate
 ---
 
 ## 🔧 Tech Stack
-- **Frontend:** React.js, Tailwind CSS, Chart.js
-- **Backend:** Node.js, Express
-- **Database:** MongoDB
-- **AI/ML:** OpenAI API, Python data processing
-- **Integration:** Notion API, LoopMessaging API
-- **Deployment:** Vercel, GitHub Actions
+
 
 ---
 
 ## 📈 Smart Metrics
-- **Friend Magnet:** Who's bringing the most new runners?
-- **Speed Demon:** Who's hitting the fastest pace?
-- **Iron Runner:** Who never misses a run?
+- **Friend Magnet:** Who's bringing the most new runners? and How many?
+- **Speed Demon:** Who's hitting the fastest pace? and What is the fastest pace?
+- **Iron Runner:** Who has attended maximum number of runs?
 - **Consistency King:** Who has the longest streak?
 
 ---
@@ -75,7 +70,6 @@ We're building an **intelligent platform** that transforms how run clubs operate
 ## 👥 Our Team
 - Clayton Yan
 - Sriya Challa
-- Gordon Dina
 
 ---
 
