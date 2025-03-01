@@ -1,44 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8" />
-  <title>Runner Dashboard</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 1rem;
-    }
-    .nav-links {
-      margin-bottom: 1rem;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <title>Runners Dashboard</title>
+  <!-- Link to the external CSS file -->
+  <link rel="stylesheet" href="css/runner.css">
 </head>
 <body>
-  <h1>Runner Dashboard</h1>
+  <h1>Runners Dashboard (Notion Embed)</h1>
 
-  <!-- Navigation link back to Organizer page -->
-  <div class="nav-links">
-    <a href="index.html">Go to Organizer Page</a>
-  </div>
+  <!-- Buttons for toggling the iframe's visibility and dark mode -->
+  <button class="toggle-btn" id="toggleIframeBtn">Hide Iframe</button>
+  <button class="toggle-btn" id="toggleDarkModeBtn">Dark Mode</button>
 
-  <ul id="statsList">
-    <!-- We'll populate this with JavaScript below -->
-  </ul>
+  <!-- Embed the Notion page via iframe -->
+  <iframe
+    class="notion-iframe"
+    id="notionFrame"
+    src="https://telling-potential-0f8.notion.site/Runners-4882b096c64e48ad9692e69c0dbd6eee"
+    frameborder="0"
+    scrolling="yes"
+    allowfullscreen>
+  </iframe>
 
-  <script>
-    // Example runner stats
-    const runsAttended = 5;
-    const friendsBrought = 2;
-    const averagePace = '8:30 min/mile';
-
-    const statsList = document.getElementById('statsList');
-
-    // Hard-code them in for MVP demo
-    statsList.innerHTML = `
-      <li><strong>Runs Attended:</strong> ${runsAttended}</li>
-      <li><strong>Friends Brought:</strong> ${friendsBrought}</li>
-      <li><strong>Average Pace:</strong> ${averagePace}</li>
-    `;
-  </script>
+  <!-- Link to the external JS file (place at bottom for best practice) -->
+  <script src="js/runner.js"></script>
 </body>
 </html>
