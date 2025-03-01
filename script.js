@@ -15,7 +15,7 @@ sendBtn.addEventListener('click', async () => {
 
   try {
     // Example Netlify Function endpoint
-    const netlifyFunctionUrl = 'https://<YOUR_NETLIFY_APP>.netlify.app/.netlify/functions/agent';
+    const netlifyFunctionUrl = 'https://https://roaring-bavarois-b02f5d.netlify.app.netlify.app/.netlify/functions/agent';
 
     const res = await fetch(netlifyFunctionUrl, {
       method: 'POST',
