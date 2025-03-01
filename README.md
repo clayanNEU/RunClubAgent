@@ -12,6 +12,8 @@
 ## 🚀 Our Hackathon Mission
 We're building an **intelligent platform** that transforms how run clubs operate. Our AI agent tracks crucial metrics, automates runner tracking, and gamifies running.
 
+https://roaring-bavarois-b02f5d.netlify.app
+
 ---
 
 ## ✨ Key Features
