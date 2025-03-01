@@ -22,7 +22,7 @@ exports.handler = async (event, context) => {
     const { Toolhouse } = require('@toolhouseai/sdk');
     const OpenAI = require('openai');
 
-    const MODEL = 'gpt-4o-mini';
+    const MODEL = 'gpt-4o';
 
     const toolhouse = new Toolhouse({
       apiKey: process.env.TOOLHOUSE_API_KEY,
