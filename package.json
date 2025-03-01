@@ -1,6 +1,23 @@
 {
   "dependencies": {
     "@toolhouseai/sdk": "^1.1.6",
-    "openai": "^4.86.1"
-  }
+    "lucide-react": "^0.477.0",
+    "openai": "^4.86.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "recharts": "^2.15.1"
+  },
+  "name": "runclubagent",
+  "description": "<div align=\"center\">",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack --mode development --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {}
 }
