@@ -1,33 +1,28 @@
-/* Base styling */
+/* runner.css */
 body {
     font-family: Arial, sans-serif;
     margin: 1rem;
-    /* Smooth transition for dark mode background & text */
     transition: background-color 0.5s, color 0.5s;
   }
   
-  /* The Notion iframe */
   .notion-iframe {
     width: 100%;
     height: 600px;
     border: 1px solid #ccc;
-    /* Start at 0 opacity for fade-in effect */
     opacity: 0;
     transition: opacity 1s ease-in-out;
   }
   
-  /* Utility class to hide elements (used for toggling) */
+  /* Hide elements completely */
   .hidden {
     display: none;
   }
   
-  /* Simple styling for toggle buttons */
   .toggle-btn {
     margin: 0.5rem 0;
     cursor: pointer;
   }
   
-  /* Dark mode */
   .dark-mode {
     background-color: #333;
     color: #fff;

@@ -1,15 +1,31 @@
-// Wait for the DOM to load
+// runner.js
+
 document.addEventListener("DOMContentLoaded", () => {
-    const notionFrame = document.getElementById("notionFrame");
+    // Buttons
     const toggleIframeBtn = document.getElementById("toggleIframeBtn");
     const toggleDarkModeBtn = document.getElementById("toggleDarkModeBtn");
   
-    // 1. Fade the iframe in once it finishes loading
+    // Container where we'll place the iframe
+    const iframeContainer = document.getElementById("iframeContainer");
+  
+    // 1. Dynamically create the iframe
+    const notionFrame = document.createElement("iframe");
+    notionFrame.id = "notionFrame";
+    notionFrame.classList.add("notion-iframe");
+    notionFrame.src = "https://telling-potential-0f8.notion.site/Runners-4882b096c64e48ad9692e69c0dbd6eee";
+    notionFrame.frameBorder = "0";
+    notionFrame.scrolling = "yes";
+    notionFrame.allowFullscreen = true;
+  
+    // Insert it into the DOM
+    iframeContainer.appendChild(notionFrame);
+  
+    // 2. Fade in once the iframe loads
     notionFrame.addEventListener("load", () => {
       notionFrame.style.opacity = 1;
     });
   
-    // 2. Toggle iframe visibility
+    // 3. Toggle iframe visibility
     toggleIframeBtn.addEventListener("click", () => {
       if (notionFrame.classList.contains("hidden")) {
         notionFrame.classList.remove("hidden");
@@ -20,7 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   
-    // 3. Toggle dark mode
+    // 4. Toggle dark mode
     toggleDarkModeBtn.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
     });

@@ -3,27 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <title>Runners Dashboard</title>
-  <!-- Link to the external CSS file -->
   <link rel="stylesheet" href="css/runner.css">
 </head>
 <body>
   <h1>Runners Dashboard (Notion Embed)</h1>
 
-  <!-- Buttons for toggling the iframe's visibility and dark mode -->
   <button class="toggle-btn" id="toggleIframeBtn">Hide Iframe</button>
   <button class="toggle-btn" id="toggleDarkModeBtn">Dark Mode</button>
 
-  <!-- Embed the Notion page via iframe -->
-  <iframe
-    class="notion-iframe"
-    id="notionFrame"
-    src="https://telling-potential-0f8.notion.site/Runners-4882b096c64e48ad9692e69c0dbd6eee"
-    frameborder="0"
-    scrolling="yes"
-    allowfullscreen>
-  </iframe>
+  <!-- This is where we'll insert the iframe with JavaScript -->
+  <div id="iframeContainer"></div>
 
-  <!-- Link to the external JS file (place at bottom for best practice) -->
   <script src="js/runner.js"></script>
 </body>
 </html>
