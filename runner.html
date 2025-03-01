@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Runner Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 1rem;
+    }
+    .nav-links {
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Runner Dashboard</h1>
+
+  <!-- Navigation link back to Organizer page -->
+  <div class="nav-links">
+    <a href="index.html">Go to Organizer Page</a>
+  </div>
+
+  <ul id="statsList">
+    <!-- We'll populate this with JavaScript below -->
+  </ul>
+
+  <script>
+    // Example runner stats
+    const runsAttended = 5;
+    const friendsBrought = 2;
+    const averagePace = '8:30 min/mile';
+
+    const statsList = document.getElementById('statsList');
+
+    // Hard-code them in for MVP demo
+    statsList.innerHTML = `
+      <li><strong>Runs Attended:</strong> ${runsAttended}</li>
+      <li><strong>Friends Brought:</strong> ${friendsBrought}</li>
+      <li><strong>Average Pace:</strong> ${averagePace}</li>
+    `;
+  </script>
+</body>
+</html>

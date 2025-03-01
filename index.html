@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Run Organizer</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 1rem;
+    }
+    .chat-container {
+      border: 1px solid #ccc;
+      width: 300px;
+      height: 300px;
+      overflow-y: auto;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+    .message {
+      margin: 0.5rem 0;
+    }
+    .organizer {
+      text-align: right;
+      color: blue;
+    }
+    .ai {
+      text-align: left;
+      color: green;
+    }
+    .input-area {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .nav-links {
+      margin-top: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Run Organizer Page</h1>
+  
+  <!-- Simple navigation link to the Runner page -->
+  <div class="nav-links">
+    <a href="runner.html">Go to Runner Dashboard</a>
+  </div>
+  
+  <div class="chat-container" id="chatContainer">
+    <!-- Chat messages will be appended here by JavaScript -->
+  </div>
+
+  <div class="input-area">
+    <input type="text" id="chatInput" placeholder="Type a message..." />
+    <button id="sendBtn">Send</button>
+  </div>
+
+  <script>
+    const chatContainer = document.getElementById('chatContainer');
+    const chatInput = document.getElementById('chatInput');
+    const sendBtn = document.getElementById('sendBtn');
+
+    sendBtn.addEventListener('click', () => {
+      const userMessage = chatInput.value.trim();
+      if (!userMessage) return;
+
+      // Display the organizer's message
+      addMessage(userMessage, 'organizer');
+
+      // Stub: Simulate an AI response
+      const aiMessage = `AI says: "${userMessage}"`;
+      addMessage(aiMessage, 'ai');
+
+      // Clear the input field
+      chatInput.value = '';
+    });
+
+    function addMessage(text, sender) {
+      const msgElem = document.createElement('p');
+      msgElem.classList.add('message', sender);
+      msgElem.textContent = text;
+      chatContainer.appendChild(msgElem);
+
+      // Auto-scroll to the bottom
+      chatContainer.scrollTop = chatContainer.scrollHeight;
+    }
+  </script>
+</body>
+</html>
