@@ -16,6 +16,7 @@ exports.handler = async (event, context) => {
         body: JSON.stringify({ error: 'No prompt provided' })
       };
     }
+    console.log('Prompt:', prompt);
 
     // Import the Toolhouse and OpenAI SDKs
     const { Toolhouse } = require('@toolhouseai/sdk');
