@@ -1,0 +1,3 @@
+[build]
+functions = "netlify/functions"
+# the rest of your build config if needed
