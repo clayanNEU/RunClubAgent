@@ -10,7 +10,7 @@
 ---
 
 ## 🚀 Our Hackathon Mission
-We're building an **intelligent platform** that transforms how run clubs operate. Our AI agent tracks crucial metrics, automates communications, and creates a vibrant community experience.
+We're building an **intelligent platform** that transforms how run clubs operate. Our AI agent tracks crucial metrics, automates runner tracking, and gamifies running.
 
 ---
 
@@ -19,7 +19,6 @@ We're building an **intelligent platform** that transforms how run clubs operate
 ### 🔍 For Organizers
 - **Smart Data Tracking:** AI agent scrapes Notion data for runner metrics
 - **Live Leaderboards:** Auto-updates for referrals, pace records, attendance & streaks
-- **Easy Communication:** Send group texts via LoopMessaging
 - **One-Click Updates:** Modify spreadsheets directly through our interface
 
 ### 👟 For Runners
@@ -82,9 +81,9 @@ We're building an **intelligent platform** that transforms how run clubs operate
 
 ### Prerequisites
 - Node.js v16+
-- MongoDB
+- toolhouse
+- fire crawl api
 - Notion account with API access
-- LoopMessaging account
 
 ### Installation
 1. Clone the repository
